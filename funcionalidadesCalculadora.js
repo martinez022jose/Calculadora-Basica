@@ -13,6 +13,7 @@
     var numero0 = document.querySelector('.cajaCalculadora .cajaBotones .cajaNumeros .fila .n0');
   
     var resultado = document.querySelector('.cajaCalculadora .cajaResultado .resultado');
+  
 
     //Variables de operaciones
     var suma = document.querySelector('.cajaCalculadora .cajaBotones .cajaOperaciones .suma');
@@ -20,14 +21,15 @@
     var multiplicacion = document.querySelector('.cajaCalculadora .cajaBotones .cajaOperaciones .multiplicacion');
     var division = document.querySelector('.cajaCalculadora .cajaBotones .cajaOperaciones .division');
     var limpiarPantalla = document.querySelector('.cajaCalculadora .cajaBotones .cajaNumeros .fila .c');
-    var ans = document.querySelector('cajaCalculadora .cajaBotones .cajaNumeros .fila .ans');
+    var coma = document.querySelector('.cajaCalculadora .cajaBotones .cajaNumeros .fila .coma');
     var igual = document.querySelector('.cajaCalculadora .cajaIgualdad .igual');
     
     //Variables para conseguir valores
     var valor1 = "0";
     var valor2 = "0";
-    var acumulador ="0";
     var tipoOperacion = "";
+    var usoAns = false;
+    
 	
     //Eventos sobre los numeros
 	numero1.addEventListener('click',()=>{
@@ -92,19 +94,14 @@
 
 	igual.addEventListener('click',()=>{
         valor2 = resultado.innerHTML;
-        if(acumulador!="0"){
-        	realizarOperacion(aux, valor2);
-        }
-        else{
-        	realizarOperacion(valor1,valor2);
+        realizarOperacion(valor1,valor2);
 
-        }
+        
 
 	});
 
-	ans.addEventListener('click',()=>{
-		acumulador = resultado.innerHTML;
-		resultado.innerHTML="";
+    coma.addEventListener('click',()=>{
+		resultado.innerHTML = resultado.innerHTML + ".";
 	});
 
 
@@ -127,6 +124,7 @@
         else{
         resultado.innerHTML = dividir(valor1, valor2);}
     };
+
 	function sumar(numero1, numero2){
 		var resultado = parseFloat(numero1)+ parseFloat(numero2);
 		return resultado;
