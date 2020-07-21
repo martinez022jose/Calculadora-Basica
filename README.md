@@ -6,13 +6,7 @@ Poder modelar y poner en funcionalidad una calculadora que pueda realizar operac
 ## Modelado :memo:
 > Modelado: 
 
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/cara1.PNG"/>
-
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/cara5.PNG"/>
-
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/cara2.PNG"/>
-
-<img height="400px" width="600px" scale="50%" src="https://github.com/martinez022jose/Detector-De-Rostros/blob/master/screenShotsReadMe/cara4.PNG"/>
+<img height="600px" width="400px" scale="50%" src="https://github.com/martinez022jose/Calculadora-Basica/blob/master/screenShotsReadMe/calculadora.PNG"/>
 
 ## Autor/Autores :pushpin:
 * **Jose Martinez Gutierrez**
