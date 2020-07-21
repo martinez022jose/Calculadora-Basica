@@ -15,6 +15,7 @@
 	border:1px solid black;
 	border-radius: 30px;
 	margin-top: 40px;
+	background: #ededed;
 	
 }
 
@@ -32,6 +33,15 @@
 	position: absolute;
 	left: 0px;
 	bottom: 0px;
+	padding: 5px;
+}
+
+.cajaCalculadora .cajaResultado .retencion{
+	font-size: 25px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 5px;
 }
 .cajaCalculadora .cajaBotones{
 	display: flex;}

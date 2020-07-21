@@ -22,7 +22,8 @@
     var division = document.querySelector('.cajaCalculadora .cajaBotones .cajaOperaciones .division');
     var limpiarPantalla = document.querySelector('.cajaCalculadora .cajaBotones .cajaNumeros .fila .c');
     var coma = document.querySelector('.cajaCalculadora .cajaBotones .cajaNumeros .fila .coma');
-    var igual = document.querySelector('.cajaCalculadora .cajaIgualdad .igual');
+	var igual = document.querySelector('.cajaCalculadora .cajaIgualdad .igual');
+	var retencion = document.querySelector('.cajaCalculadora .cajaResultado .retencion');
     
     //Variables para conseguir valores
     var valor1 = "0";
@@ -68,6 +69,7 @@
     //Eventos de operaciones
 	suma.addEventListener('click',()=>{
 		valor1 = resultado.innerHTML;
+		retencion.innerHTML = valor1 + "+";
 		resultado.innerHTML = "";
 	    tipoOperacion = "suma";
 
@@ -75,25 +77,29 @@
 
 	resta.addEventListener('click', ()=>{
 		valor1 = resultado.innerHTML;
+		retencion.innerHTML = valor1 + "-";
 		resultado.innerHTML = "";
 		tipoOperacion = "resta";
 	});
 
 	multiplicacion.addEventListener('click',()=>{
 		valor1 = resultado.innerHTML;
+		retencion.innerHTML = valor1 + "*";
 		resultado.innerHTML = "";
 		tipoOperacion = "multiplicacion";
 	});
 
 	division.addEventListener('click', ()=>{
 		valor1 = resultado.innerHTML;
+		retencion.innerHTML = valor1 + "/";
 		resultado.innerHTML = "";
 		tipoOperacion = "division";
 	});
 
 
 	igual.addEventListener('click',()=>{
-        valor2 = resultado.innerHTML;
+		valor2 = resultado.innerHTML;
+		retencion.innerHTML = retencion.innerHTML + valor2
         realizarOperacion(valor1,valor2);
 
         
@@ -108,13 +114,14 @@
 
 	limpiarPantalla.addEventListener('click',()=>{
 		resultado.innerHTML="";
+		retencion.innerHTML ="";
 	});
 
 	
     
     //Funciones auxiliares para las operaciones
 
-    function realizarOperacion(val1,val2){
+    function realizarOperacion(valor1,valor2){
 		if(tipoOperacion == "suma"){
            resultado.innerHTML = sumar(valor1, valor2);}
         else if(tipoOperacion == "resta"){
