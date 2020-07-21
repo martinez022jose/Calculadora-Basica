@@ -6,7 +6,7 @@ Poder modelar y poner en funcionalidad una calculadora que pueda realizar operac
 ## Modelado :memo:
 > Modelado: 
 
-<img height="600px" width="400px" scale="50%" src="https://github.com/martinez022jose/Calculadora-Basica/blob/master/screenShotsReadMe/calculadora.PNG"/>
+<img height="500px" width="400px" scale="50%" src="https://github.com/martinez022jose/Calculadora-Basica/blob/master/screenShotsReadMe/calculadora.PNG"/>
 
 ## Autor/Autores :pushpin:
 * **Jose Martinez Gutierrez**
