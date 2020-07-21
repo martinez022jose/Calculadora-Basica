@@ -1,7 +1,7 @@
 # Calculadora Basica
 
 ## Objetivo :dart:
-Poder modelar y poner en funcionalidad una calculadora que pueda realizar operaciones basicas(+,-.*,/). Se busca poner en practica el conocimiento sobre HTM5, CSS3 y JavaScript.
+Poder modelar y poner en funcionamiento una calculadora que pueda realizar operaciones basicas(+,-.*,/). Se busca poner en practica el conocimiento sobre HTM5, CSS3 y JavaScript.
 
 ## Modelado :memo:
 > Modelado: 
