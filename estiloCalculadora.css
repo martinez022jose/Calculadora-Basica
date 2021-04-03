@@ -5,16 +5,12 @@
 }
 
 .cajaCalculadora{
-	width: 25%;
-	margin: auto;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
 	border:1px solid black;
 	border-radius: 30px;
-	margin-top: 40px;
 	background: #ededed;
 	
 }
@@ -25,7 +21,6 @@
 	border: 1px solid rgba(0,0,0,0.3);
 	position: relative;
 	border-radius: 5px;
-	margin-bottom: 30px;
 }
 
 .cajaCalculadora .cajaResultado .resultado{
@@ -41,16 +36,16 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	padding: 5px;
 }
 .cajaCalculadora .cajaBotones{
-	display: flex;}
+	display: flex;
+}
+
 
 .cajaCalculadora .cajaBotones .cajaNumeros .fila button{
 	display: inline-block;
 	width: 60px;
 	height: 60px;
-	margin: 5px;
 	background: rgba(0,0,0,0.3);
 	border-radius: 5px;
 	border:1px solid rgba(0,0,0,0.3) ;
@@ -70,7 +65,6 @@
 .cajaCalculadora .cajaBotones .cajaOperaciones button{
 	width: 60px;
 	height: 60px;
-	margin: 5px;
 	background: rgba(0,0,0,0.3);
 	border-radius: 5px;
 	border:1px solid rgba(0,0,0,0.3) ;
@@ -85,7 +79,6 @@
 	color:white;
 	border:1px solid black;
 	font-size: 30px;
-	margin-top: 30px;
 }
 
 
