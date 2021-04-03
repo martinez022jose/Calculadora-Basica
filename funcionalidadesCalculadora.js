@@ -99,12 +99,11 @@
 
 	igual.addEventListener('click',()=>{
 		valor2 = resultado.innerHTML;
-		retencion.innerHTML = retencion.innerHTML + valor2
+		retencion.innerHTML = retencion.innerHTML + valor2;
         realizarOperacion(valor1,valor2);
-
-        
-
-	});
+		});
+	
+		
 
     coma.addEventListener('click',()=>{
 		resultado.innerHTML = resultado.innerHTML + ".";
